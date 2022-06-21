@@ -17,6 +17,7 @@ export default class ToolBarCustom extends React.Component {
   componentDidMount() {
     var $$ = this.Dom7;
     $$(".js-link-home").addClass("js-active");
+    
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -30,6 +31,8 @@ export default class ToolBarCustom extends React.Component {
         if (href === "/") {
           $$(".js-link-home").addClass("js-active");
         }
+        //console.log(hrefLink);
+        //console.log(href);
         if (
           hrefLink === href ||
           href
@@ -110,7 +113,7 @@ export default class ToolBarCustom extends React.Component {
               icon="las la-chart-bar"
               text="Báo cáo"
               roles={["director"]}
-              href="/report/date/"
+              href="/report/"
             />
             <PrivateNav
               className="page-toolbar-bottom__link js-toolbar-link"
@@ -144,7 +147,7 @@ export default class ToolBarCustom extends React.Component {
               icon="las la-chart-bar"
               text="Báo cáo"
               roles={[]}
-              href="/report/date/"
+              href="/report/"
             />
             <Link
               noLinkClass
